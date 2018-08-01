@@ -1,5 +1,61 @@
-/* 
+ul.boxes.gallery-container li.box.box-bg:hover {
+    background-color: #32b5de;
+}
+ul.boxes.gallery-container li.box.box-bg:hover h2{
+    color: white;
+    font-weight: bold;
+}
 
-write your code here
+ul.boxes.gallery-container li.box a img {
+    border-radius: 100%;
+}
 
-*/
+p:first-letter{
+    color:#76cdd7;
+    font-size: 30px;
+}
+
+div.tm-sidebar,div.tm-content-box{
+    box-shadow: 0 0 20px rgba(0,0,0,0.65);
+}
+
+section::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 30px solid #32b5de;
+    border-right: 130px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 0px solid transparent;
+}
+
+#tmCarousel h2.tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+h2 + p{
+    font-style: italic;
+}
+
+section p {
+    line-height: 1.7;
+    text-indent: 30px;
+}
+
+section.heading a:visited {
+    color: silver;
+}
+
+section.heading a:hover {
+    color: deepskyblue;
+    text-decoration: underline;
+    text-decoration-style: double;
+
+}
+section.heading a.text::after{
+    content:"New";
+    color: red;
+    vertical-align: super;
+    font-size: 12px;
+}
