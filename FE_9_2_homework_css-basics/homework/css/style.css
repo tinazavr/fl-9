@@ -1,7 +1,8 @@
 ul.boxes.gallery-container li.box.box-bg:hover {
     background-color: #32b5de;
 }
-ul.boxes.gallery-container li.box.box-bg:hover h2{
+
+ul.boxes.gallery-container li.box.box-bg:hover h2 {
     color: white;
     font-weight: bold;
 }
@@ -10,13 +11,13 @@ ul.boxes.gallery-container li.box a img {
     border-radius: 100%;
 }
 
-p:first-letter{
-    color:#76cdd7;
+p:first-letter {
+    color: #76cdd7;
     font-size: 30px;
 }
 
-div.tm-sidebar,div.tm-content-box{
-    box-shadow: 0 0 20px rgba(0,0,0,0.65);
+div.tm-sidebar, div.tm-content-box {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.65);
 }
 
 section::before {
@@ -34,7 +35,7 @@ section::before {
     letter-spacing: 5px;
 }
 
-h2 + p{
+h2 + p {
     font-style: italic;
 }
 
@@ -53,31 +54,33 @@ section.heading a:hover {
     text-decoration-style: double;
 
 }
-section.heading a.text::after{
-    content:"New";
+
+section.heading a.text::after {
+    content: "New";
     color: red;
     vertical-align: super;
     font-size: 12px;
 }
+
 section.blocks ul.gallery-container li.box:nth-child(odd) {
     background-color: rgba(219, 219, 219, 0.19);
 }
 
-section.blocks ul.gallery-container li.box p:first-letter{
-     color:black;
- }
+section.blocks ul.gallery-container li.box p:first-letter {
+    color: black;
+}
 
-section.blocks ul.gallery-container li.box p{
+section.blocks ul.gallery-container li.box p {
     line-height: 1.7;
     text-indent: 0;
 }
 
-nav.tm-main-nav li:not(:last-child){
+nav.tm-main-nav li:not(:last-child) {
     border-bottom: 2px dotted silver;
 }
 
-div.mandatory-field::after{
-    content:"*";
+div.mandatory-field::after {
+    content: "*";
     color: red;
     font-weight: bold;
 }
@@ -85,45 +88,55 @@ div.mandatory-field::after{
 form.contact-form input, form.contact-form button {
     color: red;
 }
-form.contact-form button:hover{
+
+form.contact-form button:hover {
     background-color: #32b5de;
 }
 
-@media print{
+@media print {
 
-    .tm-sidebar, #home + section ~ section, #about{
+    .tm-sidebar, #home + section ~ section, #about {
         display: none;
     }
-    .tm-main-content{
+
+    .tm-main-content {
         margin-left: 0;
     }
-    h2.tm-section-title{
+
+    h2.tm-section-title {
         color: #2524de;
     }
-    p:first-letter{
-        color:initial;
+
+    p:first-letter {
+        color: initial;
         font-size: initial;
     }
-    h2 + p{
+
+    h2 + p {
         font-style: normal;
     }
+
     section p {
         text-indent: 0;
     }
 
     div.tm-sidebar, div.tm-content-box {
-        box-shadow: 0 0 20px rgba(0,0,0,0.65);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.65);
     }
-    .flex-2-col{
+
+    .flex-2-col {
         flex-direction: column;
     }
-    section::before{
+
+    section::before {
         border: none;
     }
-    .pad{
+
+    .pad {
         padding: 0;
     }
-    .tm-banner{
+
+    .tm-banner {
         height: 250px;
     }
 }
