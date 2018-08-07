@@ -49,8 +49,7 @@ header img {
   max-width: 100%;
 }
 header nav {
-  align-self: end;
-  justify-self: end;
+  align-self: flex-end;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
