@@ -67,6 +67,7 @@ article div {
 article img {
     grid-area: image;
     max-height: 300px;
+    max-width: 100%;
 }
 
 .up-button {
@@ -107,3 +108,58 @@ article img {
 }
 
 
+@media screen and (max-width: 575px) {
+    body {
+        background-color: #fff;
+        margin: 0;
+    }
+
+    header {
+        margin: 0;
+    }
+
+    main h1, main h2, main div {
+        color: #000;
+    }
+
+    main article {
+        margin: 15px 40px;
+    }
+
+    header nav {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    header nav a {
+        border-bottom: #ddd 1px solid;
+    }
+
+    header nav a:active, header nav a.active {
+        font-weight: bold;
+    }
+
+    main h1 {
+        margin: 100px 15px 100px 15px;
+    }
+    .up-button {
+        display: block;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 30px;
+        background-color: #5ebcff;
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+        box-shadow: 6px 8px 10px #ddd;
+    }
+}
+@media screen and (min-width: 576px){
+    article h2{
+        background: linear-gradient(to right, #fff, #5D5D5D);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
