@@ -12,7 +12,6 @@ if (!confirm(`Do you want to play a game?`)) {
 
 function game() {
     const secretNumber = Math.floor(Math.random() * range);
-    console.log(secretNumber);
     for (let i = 0; i < 3; i++) {
         const number = +prompt(`Enter a number from 0 to ${range}
                                 Attempts left: ${3 - i}
